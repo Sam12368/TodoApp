@@ -11,7 +11,7 @@ manager = TaskManager()
 def index():
     return send_from_directory(
         os.path.join(app.root_path, "..", "static"),
-        "index.html")	
+        "index.html")
 
 
 @app.route("/tasks", methods=["GET"])
